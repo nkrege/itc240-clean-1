@@ -36,13 +36,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="template.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.php">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
+              <a class="nav-link" href="daily.php">Daily</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
@@ -53,14 +53,14 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <header class="masthead" style='background-image: url("img/<?=$background?>")'>
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h1><?=$siteName?></h1>
+              <span class="subheading"><?=$slogan?></span>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
         <div class="page-heading">
-              <h1>Page Heading Goes Here!</h1>
-              <span class="subheading">Clever comment here!</span>
+              <h1><?=$pageID?></h1>
+              <span class="subheading"><?=$subHeader?></span>
         </div>
           <!-- header ends here -->
